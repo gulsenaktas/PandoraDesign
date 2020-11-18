@@ -1,0 +1,126 @@
+$maincolor:rgb(247,143,192) ;
+
+// RESET
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
+
+
+.body-wrap{
+    font-family: 'Comfortaa', cursive;
+    display: flex; 
+    
+    .leftside{
+        display: flex;
+        flex-direction: column;
+        border-right: 0.1px solid rgb(235, 235, 235);
+        width: 100%;
+
+        .logo{
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            color: $maincolor;
+
+            .art{
+                font-weight: 100;
+                font-style: normal;
+                margin: 10px;
+                color: #808080;
+            }     
+        }
+
+        .leftcontent{
+            width: 100%;
+            height: 80vh;
+            background-image: url(/img/christmas-2853008_960_720.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgba(255, 255, 255, 0.2 );
+            background-blend-mode: lighten;
+            border-top: 0.1px solid rgb(211, 208, 208);
+        }
+    }
+
+    .rightside {
+        width: 100%;
+
+        .nav{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 12px;
+            width: 50vw;
+            height: 20vh;
+            color: gray;
+            a{
+                color: #808080;
+                text-decoration: none;
+            }
+            .about{ 
+                border-bottom: 1px solid $maincolor;
+            }
+            .navitem{
+                transition: border-bottom 2s;
+                &:hover{
+                border-bottom: 1px solid $maincolor;
+                }
+            }
+                           
+        }
+        .rightcontent{
+            width: 100%;
+            height: 80vh;
+            padding-top: 80px;
+            padding-left: 50px;
+            
+            h1{
+                margin-bottom: 10px;
+                font-size: 70px;
+                line-height: 70px;
+                font-family: 'Hind', sans-serif;
+                color: rgb(94, 92, 92);
+            }
+            h3{           
+                margin-bottom: 30px;  
+                font-weight: 300;     
+
+            }
+            .button{
+                border: 2px solid $maincolor;
+                margin-bottom: 30px;
+                padding-top: 5px;
+                text-align: center;
+                font-size: 12px;
+                width: 110px;
+                height: 30px;
+                transition-duration: 0.4s;
+                   
+                    &:hover{
+                    background-color: $maincolor;
+                    border: none;
+                    color: white;
+                }
+            }
+            .text{
+                font-size: 10px;   
+            }
+        }
+    }
+}

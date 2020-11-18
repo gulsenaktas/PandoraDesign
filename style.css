@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.body-wrap {
+  font-family: 'Comfortaa', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body-wrap .leftside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 0.1px solid #ebebeb;
+  width: 100%;
+}
+
+.body-wrap .leftside .logo {
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #f78fc0;
+}
+
+.body-wrap .leftside .logo .art {
+  font-weight: 100;
+  font-style: normal;
+  margin: 10px;
+  color: #808080;
+}
+
+.body-wrap .leftside .leftcontent {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/img/christmas-2853008_960_720.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  border-top: 0.1px solid #d3d0d0;
+}
+
+.body-wrap .rightside {
+  width: 100%;
+}
+
+.body-wrap .rightside .nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  width: 50vw;
+  height: 20vh;
+  color: gray;
+}
+
+.body-wrap .rightside .nav a {
+  color: #808080;
+  text-decoration: none;
+}
+
+.body-wrap .rightside .nav .about {
+  border-bottom: 1px solid #f78fc0;
+}
+
+.body-wrap .rightside .nav .navitem {
+  -webkit-transition: border-bottom 2s;
+  transition: border-bottom 2s;
+}
+
+.body-wrap .rightside .nav .navitem:hover {
+  border-bottom: 1px solid #f78fc0;
+}
+
+.body-wrap .rightside .rightcontent {
+  width: 100%;
+  height: 80vh;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.body-wrap .rightside .rightcontent h1 {
+  margin-bottom: 10px;
+  font-size: 70px;
+  line-height: 70px;
+  font-family: 'Hind', sans-serif;
+  color: #5e5c5c;
+}
+
+.body-wrap .rightside .rightcontent h3 {
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.body-wrap .rightside .rightcontent .button {
+  border: 2px solid #f78fc0;
+  margin-bottom: 30px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 12px;
+  width: 110px;
+  height: 30px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.body-wrap .rightside .rightcontent .button:hover {
+  background-color: #f78fc0;
+  border: none;
+  color: white;
+}
+
+.body-wrap .rightside .rightcontent .text {
+  font-size: 10px;
+}
